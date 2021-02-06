@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Home Page";
+    var transientService = ViewData["transientService"] as Guid?;
+    var scopeService = ViewData["scopeService"] as Guid?;
+    var singletonService = ViewData["singletonService"] as Guid?;
+
+    var transientService2 = ViewData["transientService2"] as Guid?;
+    var scopeService2 = ViewData["scopeService2"] as Guid?;
+    var singletonService2 = ViewData["singletonService2"] as Guid?;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h3>Compare transient, scope, singleton</h3>
+    <p>transientService: @transientService</p>
+    <p>scopeService: @scopeService</p>
+    <p>singletonService: @singletonService</p>
+
+    <h3>Compare, scope</h3>
+    <p>transientService2: @transientService2</p>
+    <p>scopeService2: @scopeService2</p>
+    <p>singletonService2: @singletonService2</p>
+</div>
